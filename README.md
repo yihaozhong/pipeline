@@ -40,3 +40,7 @@ Git -> configure hooks
 integrated with the main branch regularly. To instruct it to retrieve the code from some company’s internal version control system and run the pytest module
 
 circleCI looks for .circleci/config.yml
+
+To install package dependencies, you should be looking for a requirements.txt file (or a Pipfile), which is in the repo. So you should download it before installing the dependencies.
+
+Code -> code test -> artifacts
