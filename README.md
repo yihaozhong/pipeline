@@ -44,3 +44,23 @@ circleCI looks for .circleci/config.yml
 To install package dependencies, you should be looking for a requirements.txt file (or a Pipfile), which is in the repo. So you should download it before installing the dependencies.
 
 Code -> code test -> artifacts
+
+## Scheduling
+
+### cron
+`*/15 9-17 ** 1-3, 5 log_my activity`
+
+### Airflow
+create and visualize complex workflows, monitor and log workflows and scales horizontally. 
+
+#### Directed Acyclic Graph (DAG)
+node is an action and instance. edge is the direction
+
+#### Dependencies between operators
+task1.set_downstream(task2)
+
+task3.set_upstream(task2)
+
+task1 >> task2
+
+task3 << task2
